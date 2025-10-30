@@ -1,0 +1,119 @@
+.pdf-viewer {
+  width: 100%;
+}
+
+.pdf-viewer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+}
+
+.pdf-viewer__header h3 {
+  color: #155724;
+  margin: 0;
+}
+
+.pdf-viewer__reset-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pdf-viewer__reset-btn:hover {
+  background-color: #5a6268;
+}
+
+.pdf-viewer__container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.pdf-viewer__signature {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.signature-box {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.signature-title {
+  font-size: 10px;
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.signature-name {
+  font-size: 12px;
+  color: #0066cc;
+  font-style: italic;
+  margin-bottom: 1px;
+}
+
+.signature-date {
+  font-size: 9px;
+  color: #888;
+}
+
+.pdf-viewer__iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-viewer__actions {
+  text-align: center;
+}
+
+.pdf-viewer__download-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.pdf-viewer__download-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .pdf-viewer__header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .pdf-viewer__container {
+    height: 400px;
+  }
+  
+  .pdf-viewer__download-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

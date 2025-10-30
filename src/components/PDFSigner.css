@@ -1,0 +1,23 @@
+.pdf-signer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pdf-signer__title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pdf-signer {
+    padding: 15px;
+  }
+  
+  .pdf-signer__title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
